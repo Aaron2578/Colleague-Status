@@ -101,17 +101,25 @@ function TableBody(props) {
       <td>{props.friendsObj.softSkills}</td>
       <td>{props.friendsObj.job}</td>
       <td>
-        {props.friendsObj.resume == "False" ? (
+        {props.friendsObj.resume === "False" ? (
           "No Resume"
         ) : (
-          <a href={props.friendsObj.resume} target="_blank">
+          <a
+            href={props.friendsObj.resume}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Resume
           </a>
         )}
       </td>
       <td>
-        {props.friendsObj.link == "True" ? (
-          <a href={props.friendsObj.profileCard} target="_blank">
+        {props.friendsObj.link === "True" ? (
+          <a
+            href={props.friendsObj.profileCard}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Link
           </a>
         ) : (
