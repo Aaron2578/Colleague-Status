@@ -67,7 +67,7 @@ footer {
   font-size: 20px;
   margin: 20px 0 0 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   h1 {
     font-size: 22px;
     padding: 0;
@@ -81,9 +81,10 @@ footer {
     text-align: center;
   }
   table {
-    width: 80%;
+    width: 50%;
     margin: auto;
-    overflow: scroll;
-    font-size: 15px;
+    overflow: hidden;
+    overflow-x: scroll;
+    font-size: 6px;
   }
 }
